@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lab 4</title>
+ </head>
+<body>
+<h1>Volunteer Form</h1>
+<form method="post" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+  <fieldset>
+  	<h3>My Info</h3>
+  	<div>
+  	  <label>First Name: <input type="text" name="first_name_field" placeholder="first name"></label>
+  	</div>
+  	<div>
+  	  <label>Last Name: <input type="text" name="last_name_field" placeholder="last name"></label>
+  	</div>
+  	<div>
+  	  <label for="phone_field">Phone number(s):</label>
+  	  <textarea cols="15" rows="5" id="phone_field" name="phone_field"></textarea>
+  	</div>
+  	<div>
+  	  <label>Email Address: <input type="text" name="email_field" placeholder="email address"></label>
+  	</div>
+  	<div>
+  	  <label>Gender: <input type="radio" id="male_radio" name="gender_field" value="Male"></label>
+  	  <label for="male_radio">Male</label>
+  	
+  	  <input type="radio" id="female_radio" name="gender_field" value="Female">
+  	  <label for="female_radio">Female</label><br />
+
+  	</div>
+  	<div>
+  	  <label>Age: <input type="radio" id="under_18" name="age_field" value="under 18"></label>
+  	  <label for="under_18">under 18</label>
+      <br />
+  	  <input type="radio" id="18-24" name="age_field" value="18 - 24">
+  	  <label for="18-24">18 - 24</label>
+      <br />
+  	  <input type="radio" id="25-34" name="age_field" value="25 - 34">
+  	  <label for="25-34">25 - 34</label>
+      <br />
+  	  <input type="radio" id="35-44" name="age_field" value="35 - 44">
+  	  <label for="35-44">35 - 44</label>
+      <br />
+  	  <input type="radio" id="45-54" name="age_field" value="45 - 54">
+  	  <label for="45-54">45 - 54</label>
+      <br />
+  	  <input type="radio" id="55-64" name="age_field" value="55 - 64">
+  	  <label for="55-64">55 - 64</label>
+      <br />
+  	  <input type="radio" id="over_65" name="age_field" value="64 and over">
+  	  <label for="over_65">65 and over</label>
+
+  	</div>
+  </fieldset>
+	<h3>My Availability</h3>
+  <fieldset>
+  	<div>
+  		<p>Days available: </p>
+  		<label>Sunday: <input type="checkbox" name="available_field[]" value="Sunday"></label>
+  		<br />
+  		<label>Monday: <input type="checkbox" name="available_field[]" value="Monday"></label>
+  		<br />
+  		<label>Tuesday: <input type="checkbox" name="available_field[]" value="Tuesday"></label>
+  		<br />
+  		<label>Wednesday: <input type="checkbox" name="available_field[]" value="Wedensday"></label>
+  		<br />
+  		<label>Thursday: <input type="checkbox" name="available_field[]" value="Thursday"></label>
+  		<br />
+  		<label>Friday: <input type="checkbox" name="available_field[]" value="Friday"></label>
+  		<br />
+  		<label>Saturday: <input type="checkbox" name="available_field[]" value="Saturday"></label>
+  		<br />
+  		<label for="hours_dropdown">Select a shift:</label>
+  		  <select name="hours_dropdown" id="hours_dropdown">
+  		    <option value="first shift">First shift (9am - 5pm)</option>
+  		    <option value="second shift">Second shift (5pm - 1am)</option>
+  		    <option value="third shift">Third shift (1am - 9am)</option>
+  		  </select>
+  	</div>
+  	<div>
+  	  <input type="hidden" id="hidden_field" name="hidden_field" value="jholtz1">
+  	</div>
+  	<div>
+  	  <label for="comments_field">Comments: </label>
+  	  <textarea cols="15" rows="5" id="comments_field" name="comments_field"></textarea>
+  	</div>
+  </fieldset>
+<input type="submit" value="Submit Information">
+<input type="reset" value="Reset form">
+</form>
+</body>
+</html>
